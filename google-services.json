@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "758012685874",
+    "firebase_url": "https://spring-ship-344311-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "spring-ship-344311",
+    "storage_bucket": "spring-ship-344311.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758012685874:android:d69eaea04a8c571051562b",
+        "android_client_info": {
+          "package_name": "analytics.android.my"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758012685874-g66jjakk0qq831ouspebp0hb6vk4f79v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGX4wBEFm6IC2tG36MGRJ43QSyITcpbe4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758012685874-g66jjakk0qq831ouspebp0hb6vk4f79v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

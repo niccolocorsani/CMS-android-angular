@@ -1,0 +1,134 @@
+<div class="invert">
+  <mat-stepper orientation="vertical" [linear]="false" #stepper style="background-color: black !important;">
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Inserire nome e descrizione</ng-template>
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Nome.." formControlName="firstCtrl" required (input)="addName($event)">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Prezzo</mat-label>
+          <input matInput placeholder="0.0 €" formControlName="firstCtrl" required (input)="addPrice($event)">
+        </mat-form-field>
+        <ng-template matStepLabel>Inserire descrizione</ng-template>
+        <mat-form-field appearance="fill">
+          <mat-label>Descrizione</mat-label>
+          <textarea matInput placeholder="Il prodotto è realizzato attraverso il telaio.."
+                    (input)="addDescription($event)"></textarea>
+        </mat-form-field>
+        <div>
+          <button mat-button color="primary" matStepperNext>Avanti</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Inserire caratteristiche fisiche prodotto</ng-template>
+        <mat-form-field appearance="fill">
+          <mat-label>Peso</mat-label>
+          <input matInput placeholder="0.0 Kg" (input)="addPeso($event)">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Dimensione</mat-label>
+          <input matInput placeholder="30x30" (input)="addDimensioni($event)">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Materiale</mat-label>
+          <input matInput placeholder="Lana.." (input)="addMateriale($event)">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Tipologia</mat-label>
+          <mat-select value="brown" okText="Okay" (input)="selectedType($event)">
+            <mat-option value="arredamento">arredamento</mat-option>
+            <mat-option value="orecchini">orecchini</mat-option>
+            <mat-option value="cappelli">cappelli</mat-option>
+            <mat-option value="sciarpe">sciarpe</mat-option>
+            <mat-option value="arazzi">arazzi</mat-option>
+            <mat-option value="fashion">fashion</mat-option>
+            <mat-option value="ecosostenibili">ecosostenibili</mat-option>
+            <mat-option value="accessori">accessori</mat-option>
+            <mat-option value="borse">borse</mat-option>
+            <mat-option value="arredamento">arredamento</mat-option>
+            <mat-option value="cuscini">cuscini</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperNext>Avanti</button>
+          <button mat-button matStepperPrevious>Indietro</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="thirdFormGroup">
+      <form [formGroup]="thirdFormGroup">
+        <ng-template matStepLabel>Inserire descrizione</ng-template>
+        <mat-form-field appearance="fill">
+          <mat-label>Descrizione</mat-label>
+          <input matInput placeholder="Descrizione" (input)="addDescription($event)">
+        </mat-form-field>
+        <div class="invert">
+          <input type="file" (change)="onFileChangeImage($event);" placeholder="Enter Input" value="custom">
+          <br/>
+          <br/>
+          <div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                   [style.width]="(uploadProgress | async) + '%'" [attr.aria-valuenow]="(uploadProgress | async)"
+                   aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+          </div>
+          <div>
+            <div>
+              <img id="image" class="" height="200" src="../../../assets/img/waiting.png">
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
+        <div>
+          <button mat-button matStepperNext>Avanti</button>
+          <button mat-button matStepperPrevious>Indietro</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <p>Hai concluso.</p>
+      <div>
+        <button mat-button matStepperPrevious>Indietro</button>
+        <button mat-button (click)="stepper.reset()">Cancella</button>
+      </div>
+    </mat-step>
+
+  </mat-stepper>
+  <br/>
+  <br/>
+  <br/>
+  <br/>    <br/>
+  <br/>
+  <br/>
+  <br/>    <br/>
+  <br/>
+  <br/>
+  <br/>    <br/>
+  <br/>
+  <br/>
+  <br/>    <br/>
+  <br/>
+  <br/>
+  <br/>    <br/>
+  <br/>
+  <br/>
+  <br/>    <br/>
+  <br/>
+  <br/>
+  <br/>    <br/>
+  <br/>
+  <br/>
+  <br/>
+</div>
+
+
+
+

@@ -1,0 +1,59 @@
+<div style="overflow-y: scroll; ">
+  <br/>
+  <br/>
+
+  <ul *ngFor="let order  of this.orders ">
+    <li>
+      id ordine: {{order.id.replace('ookie','')}}
+    </li>
+    <li>
+      email cliente  {{order.client.email}}
+    </li>
+    <li>
+      città:   {{order.client.city}} indirizzo: {{order.client.street}} cap: {{order.client.cap}}
+    </li>
+    <li>
+      numero telefono cliente  {{order.client.phone}}
+    </li>
+    <li>
+      <ul *ngFor="let product  of this.order.products ">
+        <li>
+          nome prodotto   {{product.name}}
+        </li>
+        <li>
+          prezzo prodotto  {{product.price}} &euro;
+        </li>
+      </ul>
+      <hr>
+  </ul>
+<!--tutti sti br sono work around se no mi posiziona male il componente-->
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</div>
